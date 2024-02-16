@@ -1,17 +1,39 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 27px 56px;
 
-  color: $color-default-white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $color-dark;
 
-  background-color: $color-neon-blue;
+  background-color: $btn-bg-trans;
   border: none;
+  box-shadow: inset 2px 2px 0 $btn-border-light, inset -2px -2px 0 $btn-border-light;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
+  @include vp-1365 {
+    padding: 22px 0;
+  }
+
   &--red {
-    background-color: $color-torch-red;
+    @include vp-1365 {
+      padding: 22px 44px;
+    }
+
+    @include vp-767 {
+      padding: 22px 47px;
+    }
+  }
+
+  @include focus {
+    outline: none;
   }
 
   &:disabled {
@@ -21,6 +43,57 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    color: $btn-color-add;
+    background-color: $bg-color-light;
+  }
+
+  &:active:not(.focus-visible) {
+    color: $color-light;
+  }
+
+  @include active {
+    color: $color-light;
+  }
+
+  &--light {
+    color: $color-light;
+    box-shadow: inset 2px 2px 0 $btn-border-dark, inset -2px -2px 0 $btn-border-dark;
+
+    &:disabled {
+      opacity: 0.3;
+
+      pointer-events: none;
+    }
+
+    @include hover-focus {
+      color: $color-dark;
+      background-image: $bth-bg-grad;
+      outline: none;
+      box-shadow: none;
+    }
+
+    @include active {
+      color: $color-active;
+    }
+
+    &:active:not(.focus-visible) {
+      color: $color-active;
+    }
+  }
+
+  &--card {
+    padding: 27px 44px;
+
+    @include vp-767 {
+      padding: 22px 44px;
+    }
+  }
+
+  &--tab {
+    padding: 18px 48px;
+
+    @include vp-767 {
+      padding: 14px 48px;
+    }
   }
 }
