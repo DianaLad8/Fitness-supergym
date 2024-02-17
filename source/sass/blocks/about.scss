@@ -68,12 +68,6 @@
     min-height: 167px;
   }
 
-  &:visited div {
-    iframe {
-      z-index: 10;
-    }
-  }
-
   div {
     position: relative;
     width: 364px;
@@ -95,7 +89,6 @@
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: 1;
     }
   }
 
@@ -106,7 +99,6 @@
     right: 0;
     left: 0;
     height: 100%;
-    z-index: 1;
 
     &::after {
       content: "";
@@ -135,7 +127,7 @@
     border: inset 2px $btn-border-red;
     transform: translate(-50%, -50%);
     transition: border $trans-600;
-    z-index: 5;
+    z-index: 1;
 
     &:hover,
     &:focus {
