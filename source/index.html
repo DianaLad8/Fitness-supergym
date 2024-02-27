@@ -106,6 +106,7 @@
         </div>
 
       </div>
+      <a href="./test-js.html">Функция printSum()</a>
 
       <section data-test="price" class="subscriptions" id="subscriptions">
         subscriptions
@@ -120,8 +121,66 @@
         <div class="page-section"></section>
       </div>
 
+      <div class="swiper">
+        <swiper-container class="mySwiper" navigation="true">
+          <swiper-slide class="slide">Slide 1
+            <figure>
+              <picture>
+                <source type="image/webp" media="(min-width: 1336px)" srcset="./img/about/about-video-desktop@1x.webp 1x, ./img/about/about-video-desktop@2x.webp 2x" width="364" height="228">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/about/about-video-tablet@1x.webp 1x, ./img/about/about-video-tablet@2x.webp 2x" width="265" height="167">
+                <source type="image/webp" srcset="./img/about/about-video-mobile@1x.webp 1x, ./img/about/about-video-mobile@2x.webp 2x" width="320" height="167">
+                <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/about/about-video-desktop@1x.jpeg 1x, ./img/about/about-video-desktop@2x.jpeg 2x" width="364" height="228">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/about/about-video-tablet@1x.jpeg 1x, ./img/about/about-video-tablet@2x.jpeg 2x" width="265" height="167">
+                <img src="./img/about/about-video-mobile@1x.jpg" srcset="./img/about/about-video-mobile@2x.jpg 2x" width="320" height="167" alt="Фотография тренажерного зала.">
+              </picture>
+            </figure>
+          </swiper-slide>
+          <swiper-slide class="slide">Slide 2</swiper-slide>
+          <swiper-slide class="slide">Slide 3</swiper-slide>
+          <swiper-slide class="slide">Slide 4</swiper-slide>
+          <swiper-slide class="slide">Slide 5</swiper-slide>
+          <swiper-slide class="slide">Slide 6</swiper-slide>
+          <swiper-slide class="slide">Slide 7</swiper-slide>
+          <swiper-slideclass="slide">Slide 8</swiper-slide>
+          <swiper-slide class="slide">Slide 9</swiper-slide>
+
+        </swiper-container>
+      </div>
+
+
       <section data-test="features" class="advantages">
-        advantages
+        <div class="advantages__text-content">
+          <h2>Наши преимущества</h2>
+        <ul>
+          <li>
+            <span><b>900</b>кв/м</span>
+            <p>Площадь<span>Занимайтесь без очередей и толкучки</span>
+            </p>
+          </li>
+          <li>
+            <span><b>100</b></span>
+            <p>Тренажеров<span>Современные тренажеры на все группы мышц</span>
+            </p>
+          </li>
+          <li>
+            <span><b>70</b>машин</span>
+            <p>Собственная парковка<span>Вы всегда найдете место для своей машины на нашей парковке</span>
+            </p>
+          </li>
+          <li>
+            <span><b>350</b>мест</span>
+            <p>Комфорт<span>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</span>
+            </p>
+          </li>
+          <li>
+            <span><b>5+</b>лет</span>
+            <p>Тренерский опыт<span>Добивайтесь своих целей быстрее с профессиональным тренером</span>
+            </p>
+          </li>
+        </ul>
+        </div>
+
+
       </section>
       <section data-test="offers" class="offers">
         offers
@@ -146,7 +205,9 @@
         footer
       </footer>
     </div>
-s    <script src="js/vendor.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

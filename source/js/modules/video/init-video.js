@@ -8,7 +8,7 @@ const initVideo = () => {
     button.style.zIndex = 0;
     cover.style.zIndex = -1;
 
-    videoPlayer.play();
+    videoPlayer.src += '&autoplay=1';
   });
 };
 

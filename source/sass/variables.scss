@@ -14,8 +14,12 @@ $color-resolutopn-blue:
 #1c3374;
 $color-egyptian-blue:
 #103aae;
+$color-persian-blue:
+#2e35ac;
 $color-crimson:
 #d10a42;
+$color-crimson2:
+#ca0a42;
 $color-torch-red:
 #ed023380;
 $color-light-red:
@@ -51,6 +55,8 @@ $color-dark: $color-default-white;
 $color-acсent: $color-resolutopn-blue;
 $color-grad: $blue-to-red;
 $color-hover: $color-egyptian-blue;
+$color-add-dark: $color-ghost-white;
+$color-add-units: $color-persian-blue;
 $color-active: $color-white-opacity7;
 
 $bg-color-light: $color-default-white;
@@ -71,6 +77,8 @@ $btn-bg-dark:  $color-default-supfire;
 $btn-bg-trans: $color-transparent;
 $bth-bg-grad: $red-to-blue;
 $btn-tab: $color-crimson;
+
+$border-add: $color-crimson2;
 
 $color-error: $color-light-red;
 // Typography
