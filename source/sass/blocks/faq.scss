@@ -1,0 +1,41 @@
+.faq {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: $bg-color-add;
+
+  @include vp-1365 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.faq__title {
+  margin-bottom: 50px;
+  text-align: start;
+
+  @include vp-1365 {
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: 37px;
+  }
+}
+
+.faq__block {
+  display: flex;
+  gap: 40px;
+
+  @include vp-1365 {
+    flex-direction: column;
+  }
+
+  @include vp-767 {
+    gap: 30px;
+  }
+}

@@ -239,7 +239,6 @@
       background-image: $bth-bg-grad;
       z-index: -1;
       transition: background-image, scale $trans-600;
-
     }
 
     &:hover::before,

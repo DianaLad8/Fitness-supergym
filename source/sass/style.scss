@@ -1,9 +1,16 @@
 // Vendor
 // ---------------------------------
 
+
 @import "vendor/normalize";
 // Swiper 8.4.7
 // @import "vendor/swiper";
+
+//  Компоненты Лига А решений
+// -------------------------
+
+@import "accordion/accordion";
+@import "accordion/data-accordion";
 
 // Global
 // ---------------------------------
@@ -20,7 +27,6 @@
 
 @import "blocks/btn";
 @import "blocks/caption";
-@import "blocks/modal";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
@@ -31,6 +37,9 @@
 @import "blocks/swiper";
 @import "blocks/advantages";
 @import "blocks/offers";
+@import "blocks/faq";
+@import "blocks/accordion-content";
+
 
 
 

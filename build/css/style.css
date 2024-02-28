@@ -314,6 +314,49 @@ template {
   display: none;
 }
 
+.accordion {
+  margin: 0 auto 50px auto;
+}
+.accordion .accordion {
+  width: 90%;
+  margin: 0 auto;
+}
+.accordion__element:last-child {
+  margin-bottom: 0;
+}
+.accordion__element {
+  margin-bottom: 34px;
+  padding: 10px;
+}
+.accordion__element.is-active > .accordion__button {
+  opacity: 1;
+}
+.accordion__button {
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.accordion__wrapper {
+  padding: 10px;
+}
+
+[data-accordion=element].is-active > [data-accordion=content] {
+  max-height: 100%;
+}
+
+[data-accordion=parent].no-transition [data-accordion=content] {
+  -webkit-transition: none;
+  transition: none;
+}
+
+[data-accordion=content] {
+  max-height: 0;
+  -webkit-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+  overflow: hidden;
+}
+
 @font-face {
   font-style: normal;
   font-weight: 600;
@@ -709,122 +752,6 @@ button,
     font-size: 32px;
     line-height: 32px;
   }
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: rgba(16, 38, 84, 0.8);
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  pointer-events: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.modal::-webkit-scrollbar {
-  display: none;
-}
-.modal__wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 60px 40px;
-}
-@media (max-width: 767px) {
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
-}
-.modal__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-.modal__content {
-  position: relative;
-  width: 600px;
-  padding: 40px;
-  background-color: #ffffff;
-}
-@media (max-width: 767px) {
-  .modal__content {
-    width: 100%;
-    padding: 20px;
-  }
-}
-.modal__close-btn {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  cursor: pointer;
-}
-.modal--responsive .modal__content {
-  width: 100%;
-}
-.modal--fit-content .modal__content {
-  width: auto;
-}
-@media (max-width: 767px) {
-  .modal--fit-content .modal__content {
-    width: 100%;
-  }
-}
-.modal--no-scale {
-  -webkit-transform: none;
-      -ms-transform: none;
-          transform: none;
-}
-.modal--preload {
-  -webkit-transition: none;
-  transition: none;
-}
-.modal.is-active {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .custom-input,
@@ -2582,6 +2509,224 @@ swiper-slide img {
     -ms-grid-column-align: center;
         justify-self: center;
   }
+}
+
+.faq {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f8f9fc;
+}
+@media (max-width: 1365px) {
+  .faq {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .faq {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.faq__title {
+  margin-bottom: 50px;
+  text-align: start;
+}
+@media (max-width: 1365px) {
+  .faq__title {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .faq__title {
+    margin-bottom: 37px;
+  }
+}
+
+.faq__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+@media (max-width: 1365px) {
+  .faq__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .faq__block {
+    gap: 30px;
+  }
+}
+
+.accordion-content {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #102654;
+}
+@media (max-width: 767px) {
+  .accordion-content {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.accordion-content div {
+  margin: 0;
+  padding: 0;
+}
+.accordion-content div:last-child {
+  border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+}
+.accordion-content div button {
+  padding: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: rgba(255, 255, 255, 0);
+  text-transform: none;
+  border: none;
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
+}
+@media (max-width: 767px) {
+  .accordion-content div button {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+.accordion-content div button.focus-visible:focus {
+  outline: none;
+}
+.accordion-content div button:hover span, .accordion-content div button:focus span {
+  background-color: #1c3374;
+}
+@media (hover: hover) {
+  .accordion-content div button:hover span:hover:not(.focus-visible), .accordion-content div button:focus span:hover:not(.focus-visible) {
+    background-color: #1c3374;
+  }
+}
+.accordion-content div button:hover span.focus-visible:focus, .accordion-content div button:focus span.focus-visible:focus {
+  background-color: #1c3374;
+}
+.accordion-content div button:hover span svg path, .accordion-content div button:focus span svg path {
+  stroke: #ffffff;
+  z-index: 10;
+}
+@media (hover: hover) {
+  .accordion-content div button:hover span svg path:hover:not(.focus-visible), .accordion-content div button:focus span svg path:hover:not(.focus-visible) {
+    stroke: #ffffff;
+    z-index: 10;
+  }
+}
+.accordion-content div button:hover span svg path.focus-visible:focus, .accordion-content div button:focus span svg path.focus-visible:focus {
+  stroke: #ffffff;
+  z-index: 10;
+}
+.accordion-content div button:disabled span {
+  opacity: 0.3;
+  pointer-events: none;
+}
+@media (max-width: 1365px) {
+  .accordion-content div button {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .accordion-content div button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+.accordion-content div button span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #1c3374;
+  border-radius: 50%;
+}
+@media (max-width: 767px) {
+  .accordion-content div button span {
+    width: 32px;
+    height: 32px;
+  }
+}
+.accordion-content div button span:last-child {
+  display: none;
+}
+.accordion-content div button span:last-child svg {
+  margin-top: 10px;
+}
+.accordion-content div button span svg {
+  width: 18px;
+  height: 18px;
+}
+@media (max-width: 767px) {
+  .accordion-content div button span svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+.accordion-content div div div p {
+  margin: 0;
+  margin-bottom: 27px;
+  padding-right: 200px;
+}
+@media (max-width: 1365px) {
+  .accordion-content div div div p {
+    padding-right: 118px;
+  }
+}
+@media (max-width: 767px) {
+  .accordion-content div div div p {
+    margin-bottom: 22px;
+    padding-right: 0;
+  }
+}
+
+.accordion-content div.is-active > button {
+  padding-bottom: 10px;
+}
+@media (max-width: 1365px) {
+  .accordion-content div.is-active > button {
+    padding-bottom: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .accordion-content div.is-active > button {
+    padding-bottom: 20px;
+  }
+}
+.accordion-content div.is-active > button span:first-child {
+  display: none;
+}
+.accordion-content div.is-active > button span:last-child {
+  display: block;
+  background-color: #1c3374;
 }
 
 /* @mixin hover-focus {
