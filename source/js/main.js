@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initVideo} from './modules/video/init-video';
 import {initAccordions} from './modules/accordion/init-accordion';
+import {initTabs} from './modules/tabs/init-tabs';
 
 // ---------------------------------
 
@@ -20,9 +21,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
   initVideo();
 
-  // acoordion
+  // Accordion
 
   initAccordions();
+
+  // Tabs
+
+  initTabs();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

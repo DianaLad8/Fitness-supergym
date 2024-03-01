@@ -36,6 +36,14 @@
     color: $color-hover;
   }
 
+  @include hover-focus {
+    color: $color-hover;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
   &:active {
     color: $color-default-supfire;
     text-decoration: underline;

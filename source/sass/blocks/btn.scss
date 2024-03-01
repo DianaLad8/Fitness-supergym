@@ -91,6 +91,38 @@
 
   &--tab {
     padding: 18px 48px;
+    color: $color-light;
+    opacity: 1;
+    background-color: $btn-bg-trans;
+    border: 1px solid rgba($btn-border-dark, 0.2);
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      background-color: $btn-bg-trans;
+      border: 1px solid $btn-border-dark;
+    }
+
+    @include hover-focus {
+      background-color: $btn-bg-trans;
+      border: 1px solid $btn-border-dark;
+    }
+
+    &:active:not(.focus-visible) {
+      color: $color-default-white;
+      background-image: $red-to-blue;
+      border: none;
+    }
+
+    @include active {
+      color: $color-default-white;
+      background-image: $red-to-blue;
+      border: none;
+    }
+
+    &:disabled {
+      opacity: 0.2;
+    }
 
     @include vp-767 {
       padding: 14px 48px;

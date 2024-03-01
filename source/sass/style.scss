@@ -11,6 +11,8 @@
 
 @import "accordion/accordion";
 @import "accordion/data-accordion";
+@import "tabs/data-tabs";
+@import "tabs/tabs";
 
 // Global
 // ---------------------------------
@@ -38,7 +40,8 @@
 @import "blocks/advantages";
 @import "blocks/offers";
 @import "blocks/faq";
-@import "blocks/accordion-content";
+@import "blocks/accordion";
+@import "blocks/tabs";
 
 
 
