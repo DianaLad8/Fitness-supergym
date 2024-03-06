@@ -29,6 +29,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
   initTabs();
 
+  // form - валидация
+
+  const form = new Form();
+  form.init();
+  window.form = form;
+  window.form.validateForm(form);
+
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {

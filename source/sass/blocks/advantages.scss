@@ -82,6 +82,15 @@
     }
   }
 
+  li:last-child,
+  li:nth-last-child(-n + 2) {
+    border-bottom: none;
+
+    span {
+      margin-bottom: 0;
+    }
+  }
+
   li span {
     margin-bottom: 80px;
     display: flex;

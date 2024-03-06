@@ -2070,58 +2070,6 @@ button,
   transition: fill 0.6s ease;
 }
 
-swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.slide {
-  padding: 20px 103px;
-  text-align: center;
-  width: 300px;
-  height: 450px;
-  font-size: 18px;
-  background: #eea6a6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .advantages {
   background-color: #f8f9fc;
 }
@@ -2238,6 +2186,14 @@ swiper-slide img {
             justify-content: center;
     text-align: center;
   }
+}
+.advantages__text-content ul li:last-child,
+.advantages__text-content ul li:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+.advantages__text-content ul li:last-child span,
+.advantages__text-content ul li:nth-last-child(-n+2) span {
+  margin-bottom: 0;
 }
 .advantages__text-content ul li span {
   margin-bottom: 80px;
@@ -3037,6 +2993,233 @@ swiper-slide img {
 .tabs__content div {
   padding: 0;
   width: 100%;
+}
+
+.main-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 1365px) {
+  .main-footer {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.free {
+  padding: 60px 103px;
+  padding-right: 170px;
+  color: #ffffff;
+  background-color: #102654;
+}
+@media (max-width: 1365px) {
+  .free {
+    padding: 100px 133px;
+  }
+}
+@media (max-width: 767px) {
+  .free {
+    padding: 70px 15px;
+  }
+}
+
+.free__title {
+  margin-bottom: 33px;
+  text-align: left;
+  color: #ffffff;
+}
+@media (max-width: 1365px) {
+  .free__title {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .free__title {
+    margin-bottom: 40px;
+  }
+}
+
+.form__submit {
+  width: 100%;
+}
+
+.input {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (46%)[2];
+  grid-template-columns: repeat(2, 46%);
+  gap: 7%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 1365px) {
+  .input {
+    -ms-grid-columns: (44%)[2];
+    grid-template-columns: repeat(2, 44%);
+    gap: 8%;
+  }
+}
+@media (max-width: 767px) {
+  .input {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+.input__wrapper {
+  padding-bottom: 38px;
+}
+@media (max-width: 1365px) {
+  .input__wrapper {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .input__wrapper {
+    padding-bottom: 40px;
+  }
+}
+
+.input__field {
+  padding: 10px;
+  width: 100%;
+  line-height: 22px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 767px) {
+  .input__field {
+    width: 100%;
+    font-weight: 300;
+  }
+}
+.input__field::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 1;
+}
+.input__field::-moz-placeholder {
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 1;
+}
+.input__field:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 1;
+}
+.input__field::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 1;
+}
+.input__field::placeholder {
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .input__field::-webkit-input-placeholder {
+    font-weight: 300;
+  }
+  .input__field::-moz-placeholder {
+    font-weight: 300;
+  }
+  .input__field:-ms-input-placeholder {
+    font-weight: 300;
+  }
+  .input__field::-ms-input-placeholder {
+    font-weight: 300;
+  }
+  .input__field::placeholder {
+    font-weight: 300;
+  }
+}
+.input__field:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #ffffff;
+}
+.input__field:focus {
+  outline: none;
+}
+.input__field:focus, .input__field:active {
+  border: 1px solid #ffffff;
+}
+.input__field:focus::-webkit-input-placeholder, .input__field:active::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+.input__field:focus::-moz-placeholder, .input__field:active::-moz-placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+.input__field:focus:-ms-input-placeholder, .input__field:active:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+.input__field:focus::-ms-input-placeholder, .input__field:active::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+.input__field:focus::placeholder, .input__field:active::placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+.input__field:disabled {
+  opacity: 0.4;
+}
+.input__field:invalid {
+  border-bottom: 1px solid #ff121f;
+}
+
+.input__wrapper.is-invalid input {
+  border-bottom: 1px solid #ff121f;
+}
+
+.is-invalid {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #ff121f;
+}
+
+.contacts {
+  padding: 60px 120px 64px;
+  background-color: #ed9b9b;
+}
+@media (max-width: 1365px) {
+  .contacts {
+    padding: 100px 133px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts {
+    padding: 15px 70px;
+  }
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #ffffff;
+  background-color: #030a1a;
+}
+@media (max-width: 1365px) {
+  .footer {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 40px;
+  }
 }
 
 /* @mixin hover-focus {

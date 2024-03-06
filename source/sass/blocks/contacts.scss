@@ -1,0 +1,12 @@
+.contacts {
+  padding: 60px 120px 64px;
+  background-color: #ed9b9b;
+
+  @include vp-1365 {
+    padding: 100px 133px;
+  }
+
+  @include vp-767 {
+    padding: 15px 70px;
+  }
+}
