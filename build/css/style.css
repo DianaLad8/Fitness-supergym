@@ -3071,6 +3071,7 @@ button,
 }
 
 .input__wrapper {
+  position: relative;
   padding-bottom: 38px;
 }
 @media (max-width: 1365px) {
@@ -3182,7 +3183,10 @@ button,
   border-bottom: 1px solid #ff121f;
 }
 
-.is-invalid {
+.is-invalid span {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -3190,17 +3194,120 @@ button,
 }
 
 .contacts {
-  padding: 60px 120px 64px;
-  background-color: #ed9b9b;
+  padding: 60px 103px 64px 120px;
 }
 @media (max-width: 1365px) {
   .contacts {
     padding: 100px 133px;
+    padding-right: 45px;
   }
 }
 @media (max-width: 767px) {
   .contacts {
-    padding: 15px 70px;
+    padding: 70px 15px;
+  }
+}
+
+.contacts__title {
+  margin-bottom: 40px;
+  text-align: left;
+}
+@media (max-width: 1365px) {
+  .contacts__title {
+    margin-bottom: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__title {
+    margin-bottom: 42px;
+  }
+}
+
+.contacts__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+}
+@media (max-width: 1365px) {
+  .contacts__wrapper {
+    gap: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+  list-style-type: none;
+}
+@media (max-width: 1365px) {
+  .contacts__list {
+    gap: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__list {
+    gap: 28px;
+  }
+}
+
+.contacts__list:first-child {
+  padding-right: 50px;
+  border-right: 1px solid #74819c;
+}
+@media (max-width: 1365px) {
+  .contacts__list:first-child {
+    padding-right: 81px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__list:first-child {
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+.contacts__headline {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 400;
+}
+@media (max-width: 1365px) {
+  .contacts__headline {
+    margin-bottom: 11px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__headline {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.contacts__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+@media (max-width: 767px) {
+  .contacts__text {
+    line-height: 20px;
   }
 }
 

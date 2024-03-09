@@ -502,25 +502,54 @@
 
     <div data-test="footer">
       <div class="main-footer">
-        <section class="free" data-form-validate data-callback="baseErrorCallback">
+        <section class="free" >
           <h2 class="free__title caption">Бесплатное занятие </h2>
-          <form class="form" action="https://echo.htmlacademy.ru/" method="POST" data-form="free">
-            <div class="form__control input">
-              <div class="input__wrapper" data-validate-type="text" data-limitation="name" data-message-base="обязательно к заполнению" data-message-extra="Только буквы" data-required>
-                <label class="input__label visually-hidden" for="name">Имя</label>
-                <input class="input__field" type="text" name="name" id="name" placeholder="Имя">
+          <div data-form-validate>
+            <form class="form" action="https://echo.htmlacademy.ru/" method="POST" data-form="free">
+              <div class="form__control input">
+                <div class="input__wrapper" data-validate-type="text" data-limitation="name" data-message-base="обязательно к заполнению" data-message-extra="Только буквы" data-required>
+                  <label class="input__label visually-hidden" for="name">Имя</label>
+                  <input class="input__field" type="text" name="name" id="name" placeholder="Имя">
+                </div>
+                <div class="input__wrapper" data-validate-type="phone" data-message-extra="Некорректно заполнено" data-message-base="обязательно к заполнению" data-phone-length="18" data-required>
+                  <label class="input__label visually-hidden" for="name">Имя</label>
+                  <input class="input__field" type="tel" name="tel" id="tel" placeholder="Телефон">
+                </div>
               </div>
-              <div class="input__wrapper" data-validate-type="phone" data-message-extra="Некорректно заполнено" data-message-base="обязательно к заполнению" data-phone-length="18" data-required>
-                <label class="input__label visually-hidden" for="name">Имя</label>
-                <input class="input__field" type="tel" name="tel" id="tel" placeholder="Телефон">
-              </div>
-            </div>
-            <button class="form__submit btn" type="submit">Отправить заявку</button>
-          </form>
+              <button class="form__submit btn" type="submit">Отправить заявку</button>
+            </form>
+          </div>
+
         </section>
 
         <section class="contacts">
-          contacts
+          <h2 class="contacts__title caption">Контакты</h2>
+          <div class="contacts__wrapper">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <h3 class="contacts__headline">Адрес:</h3>
+                <p class="contacts__text">
+                г. Омск, ул. 60 лет Октября, 7
+                </p>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__headline">График работы:</h3>
+                <p class="contacts__text">
+                  Пн-Вс: с 8:00 до 22:00
+                </p>
+              </li>
+            </ul>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <h3 class="contacts__headline">Телефон:</h3>
+                <p class="contacts__text">8-800-555-55-55</p>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__headline">Email:</h3>
+              <p class="contacts__text">omsk@supergym.ru</p>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
 

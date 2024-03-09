@@ -1,12 +1,100 @@
 .contacts {
-  padding: 60px 120px 64px;
-  background-color: #ed9b9b;
+  padding: 60px 103px 64px 120px;
 
   @include vp-1365 {
     padding: 100px 133px;
+    padding-right: 45px;
   }
 
   @include vp-767 {
-    padding: 15px 70px;
+    padding: 70px 15px;
+  }
+}
+
+.contacts__title {
+  margin-bottom: 40px;
+  text-align: left;
+
+  @include vp-1365 {
+    margin-bottom: 36px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 42px;
+  }
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+
+  @include vp-1365 {
+    gap: 60px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 15px;
+  list-style-type: none;
+
+  @include vp-1365 {
+    gap: 27px;
+  }
+
+  @include vp-767 {
+    gap: 28px;
+  }
+}
+
+.contacts__list:first-child {
+  padding-right: 50px;
+  border-right: 1px solid $border-contacts;
+
+  @include vp-1365 {
+    padding-right: 81px;
+  }
+
+  @include vp-767 {
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+.contacts__headline {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 400;
+
+  @include vp-1365 {
+    margin-bottom: 11px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.contacts__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+
+  @include vp-767 {
+    line-height: 20px;
   }
 }
