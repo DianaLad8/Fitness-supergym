@@ -1,6 +1,12 @@
 .footer {
   padding-top: 40px;
   padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
   color: $color-default-white;
   background-color: $bg-footer;
 
@@ -11,5 +17,175 @@
 
   @include vp-767 {
     padding-top: 40px;
+    line-height: 20px;
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+.footer__logo {
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-default-white;
+
+  @include vp-1365 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.footer__nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  list-style-type: none;
+
+  @include vp-1365 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 55px;
+    column-gap: 35px;
+    row-gap: 20px;
+    justify-content: flex-start;
+  }
+}
+
+.footer__nav-link {
+  position: relative;
+  padding: 5px 10px;
+  align-self: end;
+  width: 100%;
+  height: 34px;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: $color-default-white;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 20px);
+    left: 10px;
+    bottom: 0;
+    background-color: $color-default-white;
+  }
+
+  &:focus {
+    box-shadow: inset 1px 1px 0 $color-default-white, inset -1px -1px 0 $color-default-white,;
+    outline: none;
+  }
+
+  &:focus::after {
+    display: none;
+  }
+
+  &:active {
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  &:active::after {
+    display: none;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.footer__social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  align-self: center;
+  list-style-type: none;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: $color-default-white;
+  border-radius: 50%;
+
+  svg {
+    width: 13px;
+    height: 8px;
+  }
+
+  &--ok svg {
+    width: 10px;
+    height: 17px;
+  }
+
+  &--reddit svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $btn-bg-footer-hover;
+
+    @include hover-focus {
+      background-color: $btn-bg-footer-hover;
+    }
+  }
+
+  &:hover svg path,
+  &:focus svg path {
+    fill: $color-default-white;
+
+    @include hover-focus {
+      fill: $color-default-white;
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    @include focus {
+      outline: none;
+    }
+  }
+
+  &:active {
+    background-color: $color-default-supfire;
+
+    @include active {
+      background-color: $color-default-supfire;
+    }
+  }
+
+  &:active svg path {
+    fill: $color-default-white;
+
+    @include active {
+      fill: $color-default-white;
+    }
+  }
+
+  &:disabled {
+    background-color: $color-default-white;
+    opacity: 0.3;
   }
 }
