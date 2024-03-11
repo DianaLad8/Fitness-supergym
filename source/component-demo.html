@@ -1,161 +1,164 @@
 
 <section class="component-demo" data-tabs="element">
-  <h2 class="subtitle">Пример без data-height="max"</h2>
-  <div class="tabs no-transition-global" data-tabs="parent" data-delay="300">
-    <div class="tabs__controls" data-tabs="controls">
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 1</button>
-      <button class="tabs__control btn is-active" type="button" data-tabs="control">Таб 2</button>
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 3</button>
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 4</button>
-    </div>
-    <div class="tabs__content" data-tabs="content">
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
+  <div class="component-demo__form" data-form-validate="data-form-validate" data-callback="base">
+    <form method="post">
+      <h2 class="subtitle">Инпуты</h2>
+      <p>Input <b>data-validate-type="text", data-limitation="name", data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-required</b>.</p>
+      <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+        <label><span class="custom-input__label">Введите ваше имя</span>
+          <input type="text" name="user-name-1"/>
+        </label>
       </div>
-      <div class="tabs__element" data-tabs="element">
-        <div class="tabs no-transition-global" data-tabs="parent" data-delay="300">
-          <div class="tabs__controls" data-tabs="controls">
-            <button class="tabs__control btn" type="button" data-tabs="control">Sub Таб 1</button>
-            <button class="tabs__control btn" type="button" data-tabs="control">Sub Таб 2</button>
-            <button class="tabs__control btn" type="button" data-tabs="control">Sub Таб 3</button>
-            <button class="tabs__control btn is-active" type="button" data-tabs="control">Sub Таб 4</button>
-          </div>
-          <div class="tabs__content" data-tabs="content">
-            <div class="tabs__element" data-tabs="element">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-            </div>
-            <div class="tabs__element" data-tabs="element">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-            </div>
-            <div class="tabs__element" data-tabs="element">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-            </div>
-            <div class="tabs__element" data-tabs="element">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-            </div>
-          </div>
+      <hr/>
+      <p>Input <b>data-validate-type="matrix", data-matrix-limitation="digit", data-matrix="____ ______", data-message-base="Поле обязательно к заполнению", data-required</b>.</p>
+      <div class="custom-input" data-validate-type="matrix" data-matrix-limitation="digit" data-matrix="____ ______" data-message-base="Поле обязательно к заполнению" data-required="data-required">
+        <label><span class="custom-input__label">Введите номер паспорта</span>
+          <input type="text" name="user-passport"/>
+        </label>
+      </div>
+      <hr/>
+      <p>Input <b>data-validate-type="email", data-message-base="Поле обязательно к заполнению", data-required</b>.</p>
+      <div class="custom-input" data-validate-type="email" data-message-base="Поле обязательно к заполнению" data-required="data-required">
+        <label><span class="custom-input__label">Введите ваш email</span>
+          <input type="email" name="user-email"/>
+        </label>
+      </div>
+      <hr/>
+      <p>Input <b>data-validate-type="phone", data-on-input-validate, data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-message-success="Поле заполнено верно", data-required</b>.</p>
+      <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
+        <label><span class="custom-input__label">Введите ваш телефон</span>
+          <input type="tel" name="user-phone"/>
+        </label>
+      </div>
+      <p>Input <b>data-validate-type="custom-example", data-message-base="Поле обязательно к заполнению", data-message-success="Поле заполнено верно", data-required</b>.</p>
+      <div class="custom-input" data-validate-type="custom-example" data-on-input-validate="data-on-input-validate" data-required="data-required">
+        <label><span class="custom-input__label">Введите 10 символов</span>
+          <input type="text" name="user-field" minlength="10"/>
+        </label>
+      </div>
+      <hr/>
+      <p>Textarea <b>data-validate-type="text"</b>.</p>
+      <div class="custom-textarea" data-validate-type="text">
+        <label><span class="custom-textarea__label">Расскажите о себе</span>
+          <textarea name="user-info"></textarea>
+        </label>
+      </div>
+      <hr/>
+      <p>Input <b>data-validate-type="file", data-message-base="Файл обязателен к добавлению", data-message-extra="Файл слишком большой", data-on-input-validate, data-max-size="1048576"</b>.</p>
+      <div class="custom-input" data-validate-type="file" data-message-base="Файл обязателен к добавлению" data-message-extra="Размер файла не должен привышать 1мб" data-on-input-validate="data-on-input-validate" data-max-size="1048576">
+        <label><span class="custom-input__label">Добавьте файл</span>
+          <input type="file" name="user-file" accept=".png, .jpg, .webp"/>
+        </label>
+      </div>
+      <hr/>
+      <h2 class="subtitle">Кастомные Input file</h2>
+      <p>Input <b>data-validate-type="custom-upload", data-required</b>.</p>
+      <div class="input-upload input-upload--file" data-upload="file" data-validate-type="custom-upload" data-required="data-required">
+        <label>
+          <input type="file" name="upload-file"/><span class="btn">Загрузить файл</span>
+        </label>
+      </div>
+      <hr/>
+      <div class="input-upload input-upload--images-drop" data-upload="img-drop" data-validate-type="custom-upload" data-required="data-required">
+        <div class="input-upload__drop-zone" data-drop-zone="data-drop-zone"><span class="input-upload__drop-zone-text">Перетащите сюда файлы</span></div>
+        <label data-drop-zone="data-drop-zone">
+          <input type="file" name="upload-file"/><span class="btn">Загрузить файл</span>
+        </label>
+      </div>
+      <hr/>
+      <h2 class="subtitle">Чекбоксы</h2>
+      <p>Чекбокс <b>data-validate-type="checkbox", data-message-base="Поле обязательно к заполнению"</b>.</p>
+      <div>
+        <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
+          <label>
+            <input type="checkbox" value="user-agreement-1" name="user-agreement"/><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Чекбокс</span>
+          </label>
         </div>
       </div>
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-    </div>
-  </div>
-  <h2 class="subtitle">Пример с data-height="max"</h2>
-  <div class="tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
-    <div class="tabs__controls" data-tabs="controls">
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 1</button>
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 2</button>
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 3</button>
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 4</button>
-    </div>
-    <div class="tabs__content" data-tabs="content">
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-    </div>
-  </div>
-  <h2 class="subtitle">Пример с data-height="unset"</h2>
-  <div class="tabs tabs--unset no-transition-global" data-tabs="parent" data-delay="300" data-height="unset">
-    <div class="tabs__controls" data-tabs="controls">
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 1</button>
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 2</button>
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 3</button>
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 4</button>
-    </div>
-    <div class="tabs__content" data-tabs="content">
-      <div class="tabs__element" data-tabs="element">
-        <p>Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-    </div>
-  </div>
-  <h2 class="subtitle">Пример без data-delay</h2>
-  <div class="tabs no-transition-global" data-tabs="parent">
-    <div class="tabs__controls" data-tabs="controls">
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 1</button>
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 2</button>
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 3</button>
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 4</button>
-    </div>
-    <div class="tabs__content" data-tabs="content">
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-    </div>
-  </div>
-  <h2 class="subtitle">Пример отображения табов в&nbsp;виде аккордеонов при ширине области просмотра менее&nbsp;768px</h2>
-  <div class="tabs" data-tabs="parent" data-accordion-media="(max-width:767px)">
-    <div class="tabs__controls" data-tabs="controls">
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 1</button>
-      <button class="tabs__control btn is-active" type="button" data-tabs="control">Таб 2</button>
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 3</button>
-      <button class="tabs__control btn" type="button" data-tabs="control">Таб 4</button>
-    </div>
-    <div class="tabs__content" data-tabs="content">
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-      </div>
-      <div class="tabs__element" data-tabs="element">
-        <div class="tabs" data-tabs="parent" data-accordion-media="(max-width:767px)" data-single="data-single">
-          <div class="tabs__controls" data-tabs="controls">
-            <button class="tabs__control btn" type="button" data-tabs="control">Sub Таб 1</button>
-            <button class="tabs__control btn" type="button" data-tabs="control">Sub Таб 2</button>
-            <button class="tabs__control btn" type="button" data-tabs="control">Sub Таб 3</button>
-            <button class="tabs__control btn is-active" type="button" data-tabs="control">Sub Таб 4</button>
-          </div>
-          <div class="tabs__content" data-tabs="content">
-            <div class="tabs__element" data-tabs="element">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-            </div>
-            <div class="tabs__element" data-tabs="element">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-            </div>
-            <div class="tabs__element" data-tabs="element">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-            </div>
-            <div class="tabs__element" data-tabs="element">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-            </div>
-          </div>
+      <hr/>
+      <p>Группа чекбоксов <b>data-validate-type="toggle-group"</b>.</p>
+      <div class="toggle-group" data-validate-type="toggle-group" data-message-base="Поле обязательно к заполнению">
+        <div class="custom-toggle custom-toggle--checkbox">
+          <label>
+            <input type="checkbox" value="user-agreement-1" name="user-agreement"/><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Чекбокс</span>
+          </label>
+        </div>
+        <div class="custom-toggle custom-toggle--checkbox">
+          <label>
+            <input type="checkbox" value="user-agreement-2" name="user-agreement"/><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Чекбокс</span>
+          </label>
+        </div>
+        <div class="custom-toggle custom-toggle--checkbox">
+          <label>
+            <input type="checkbox" value="user-agreement-3" name="user-agreement"/><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Чекбокс</span>
+          </label>
+        </div>
+        <div class="custom-toggle custom-toggle--checkbox">
+          <label>
+            <input type="checkbox" value="user-agreement-4" name="user-agreement"/><span class="custom-toggle__icon"></span><span class="custom-toggle__label">Чекбокс</span>
+          </label>
         </div>
       </div>
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
+      <hr/>
+      <h2 class="subtitle">Селекты</h2>
+      <p>Селект простой с выбранной опцией.</p>
+      <div class="custom-select" data-select="data-select" data-validate-type="select" data-name="some-name" data-id="id-example-1" data-message-base="Поле обязательно к заполнению">
+        <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+        <ul class="custom-select__list" role="listbox">
+          <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true" role="option">Тема 1</li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Тема 2</li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Тема 3</li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Тема 4</li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">Тема 5</li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Тема 6</li>
+        </ul>
       </div>
-      <div class="tabs__element" data-tabs="element">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
+      <p>Селект простой без выбранной опции.</p>
+      <div class="custom-select" data-select="data-select" data-validate-type="select" data-name="some-name" data-id="id-example-2" data-message-base="Поле обязательно к заполнению">
+        <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span class="custom-select__text"></span><span class="custom-select__icon"></span></button>
+        <ul class="custom-select__list" role="listbox">
+          <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Тема 1</li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Тема 2</li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Тема 3</li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Тема 4</li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">Тема 5</li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-6" aria-selected="false" role="option">Тема 6</li>
+        </ul>
       </div>
-    </div>
+      <hr/>
+      <h2 class="subtitle">Кнопки сброса и отправки формы</h2>
+      <button class="btn btn--form" type="reset">Сбросить форму</button>
+      <button class="btn btn--form" type="submit">Отправить форму</button>
+    </form>
   </div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci beatae blanditiis consectetur dolores doloribus earum error et excepturi fugiat, illo magnam maxime molestiae, natus nemo non nostrum porro provident quae quibusdam quisquam quos sed soluta velit veritatis vitae, voluptatem voluptatibus! Ab accusamus amet atque earum incidunt numquam officia optio perferendis. Ad alias doloremque ea eaque eos fugiat impedit itaque maxime nostrum omnis, perferendis placeat provident reprehenderit saepe temporibus? Aliquid fugit inventore laudantium neque repellat! Accusamus adipisci aspernatur atque dolor dolore dolorum earum est et explicabo id impedit inventore magnam maxime nihil, nobis numquam odit quis, quo repudiandae tempora? Aliquam consectetur unde voluptates. A accusamus aspernatur aut beatae corporis, eum incidunt minus necessitatibus repellendus totam ut voluptas! Ab architecto consequuntur dicta dignissimos enim eveniet inventore nulla quibusdam ratione sed. Assumenda cupiditate distinctio dolores, eaque esse facere obcaecati omnis quia repellendus? A adipisci assumenda beatae consequatur cupiditate dolorem dolores eligendi esse ex, fugiat fugit hic illo iure nemo non, nulla possimus praesentium quas quo tempora, temporibus veniam vero? Adipisci aperiam architecto assumenda at autem beatae dicta dolorum esse est et exercitationem expedita in laudantium molestiae nemo nisi nostrum perspiciatis possimus quis rem sapiente soluta tenetur velit voluptas, voluptates! Distinctio, id, quis.</p>
+  <h2 class="subtitle">Пример формы с выводом общего сообщения об ошибке.</h2>
+  <div class="component-demo__form" data-form-validate="data-form-validate" data-callback="base" data-parent-validate="base" data-message-base="Заполните все данные" data-message-extra="Неверный ввод данных">
+    <form method="post" action="https://echo.htmlacademy.ru/">
+      <h2 class="subtitle">Инпуты</h2>
+      <p>Input <b>data-validate-type="text", data-limitation="name", data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-required</b>.</p>
+      <div class="custom-input" data-validate-type="text" data-limitation="name" data-required="data-required">
+        <label><span class="custom-input__label">Введите ваше имя</span>
+          <input type="text" name="user-name-1"/>
+        </label>
+      </div>
+      <hr/>
+      <p>Input <b>data-validate-type="matrix", data-matrix-limitation="digit", data-matrix="____ ______", data-message-base="Поле обязательно к заполнению", data-required</b>.</p>
+      <div class="custom-input" data-validate-type="matrix" data-matrix-limitation="digit" data-matrix="____ ______" data-required="data-required">
+        <label><span class="custom-input__label">Введите номер паспорта</span>
+          <input type="text" name="user-passport"/>
+        </label>
+      </div>
+      <hr/>
+      <p>Input <b>data-validate-type="email", data-message-base="Поле обязательно к заполнению", data-required</b>.</p>
+      <div class="custom-input" data-validate-type="email" data-required="data-required">
+        <label><span class="custom-input__label">Введите ваш email</span>
+          <input type="email" name="user-email"/>
+        </label>
+      </div>
+      <hr/>
+      <h2 class="subtitle">Кнопки сброса и отправки формы</h2>
+      <button class="btn btn--form" type="reset">Сбросить форму</button>
+      <button class="btn btn--form" type="submit">Отправить форму</button>
+    </form>
+  </div>
 </section>
